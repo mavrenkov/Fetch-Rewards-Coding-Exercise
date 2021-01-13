@@ -1,9 +1,11 @@
 # Fetch-Rewards-Coding-Exercise
 I tried to make the solution production ready and demonstrate my skills. I used Java as my main language.                                                     
-This project built with Maven and has the following dependencies:                                                 
+This project built with Maven and has the following dependencies:     
+
 1. Selenium Webdriver for Java 3.141.59                                                  
 2. Junit 4.13 (for assertions, annotations etc)                            
-3. WebDriver Manager (to avoid driver files and just call it from web)                                  
+3. WebDriver Manager (to avoid driver files and just call it from web)      
+
 I used Singleton design pattern for Driver and also I made ConfigurationReader to read sensitive information from configuration.properties                             
 I also Used POM (Page Object Model) - each web page is a java class. I have a Base Page, where I store all common methods.                               
 Also Page Factory design Pattern has been used for @FindBy annotations - because it is a more readable and more convenient way to look for elements on the page.                  

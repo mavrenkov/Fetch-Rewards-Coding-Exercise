@@ -103,19 +103,9 @@ public class ReactPage extends BasePage {
 
     }
 
-    //first way - find fake golden bar by its attribute value
+    //first way - find fake golden bar by 2 weightings
     @Test
     public void firstWayToDo(){
-        clickOnElement(correctNumber);
-        //assertion between expected result and text value from alert
-        assertEquals(expectedResult,getAlertText());
-
-        // waitSleep(10);  //uncomment if execution to fast
-    }
-
-    //second way - fine fake golden bar by 2 weightings
-    @Test
-    public void secondWayToDo(){
         //secondWeighing() - will return int (number of fake gold bar) and I will use it to get element from List of gold bars
         clickOnElement(bars.get(secondWeighing()));
         //assertion between expected result and text value from alert
@@ -125,6 +115,18 @@ public class ReactPage extends BasePage {
         // waitSleep(10);  //uncomment if execution to fast
 
     }
+    //second way - find fake golden bar by its attribute value
+    @Test
+    public void secondWayToDo(){
+        clickOnElement(correctNumber);
+        //assertion between expected result and text value from alert
+        assertEquals(expectedResult,getAlertText());
+
+        // waitSleep(10);  //uncomment if execution to fast
+    }
+
+
+
 
 
 
